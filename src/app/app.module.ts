@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
@@ -29,7 +30,9 @@ import { ShippingComponent } from './components/shipping/shipping.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
     ]),
-    HttpClientModule,
+    HttpClientModule, 
+    ReactiveFormsModule, 
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
