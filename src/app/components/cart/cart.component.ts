@@ -29,7 +29,7 @@ export class CartComponent implements OnInit {
     this.items = this.cartService.clearCart();
     console.warn('Seu pedido foi submetido!', this.checkoutForm.value);
     this.checkoutForm.reset();
-    window.alert('Seu pedido foi realizado com sucesso!')
+    window.alert('Seu pedido foi realizado com sucesso, ok?')
   }
 
 }
